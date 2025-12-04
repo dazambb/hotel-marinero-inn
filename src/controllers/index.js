@@ -2,22 +2,11 @@ const connection = require("../db/connection");
 
 const index = async (req, res) => {
   try {
-       var query = 'SELECT * from users'
-       connection.query(query, (error, result) => {
-        if (error) {
-            res.status(404).json({
-                message: 'Error ejecutando la query',
-                error: `${error}`
-            })
-        } else {
-           res.render("index", {
-             title: "Inicio",
-             message: 'Hola Mundo',
-             enterprise: 'APD'
-           });
-        }
-       })
-
+    res.render("index", {
+      title: "Inicio",
+      description: "Hotel Marinero Inn - Hotel frente al mar en la costa ecuatoriana con discoteca, restaurante, bar, piscina y habitaciones de lujo",
+      keywords: "hotel ecuador, hotel playa, hotel costa ecuatoriana, marinero inn"
+    });
   } catch (error) {
     console.log(error);
     return res.status(500).json({

@@ -1,1 +1,428 @@
-<%= message %> desde <%= enterprise %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title><%= title %> | Hotel Marinero Inn - Hotel Frente al Mar en Ecuador</title>
+    <meta name="title" content="Hotel Marinero Inn - Hotel Frente al Mar en la Costa Ecuatoriana">
+    <meta name="description" content="Hotel Marinero Inn: Hotel de playa en Ecuador con habitaciones con vista al mar, restaurante gourmet, discoteca Algarete, piscina infinity y bar. Reserva ahora tu escape perfecto frente al océano.">
+    <meta name="keywords" content="hotel ecuador, hotel playa ecuador, hotel costa ecuatoriana, hotel frente al mar, hotel con discoteca, algarete discoteca, hotel piscina infinity, habitaciones vista al mar ecuador, turismo ecuador">
+    <meta name="author" content="Hotel Marinero Inn">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hotelmarineroinn.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hotelmarineroinn.com/">
+    <meta property="og:title" content="Hotel Marinero Inn - Tu Paraíso Frente al Mar en Ecuador">
+    <meta property="og:description" content="Disfruta de habitaciones de lujo con vista al mar, gastronomía excepcional, discoteca y piscina infinity. Tu escape perfecto en la costa ecuatoriana.">
+    <meta property="og:image" content="https://hotelmarineroinn.com/img/hero-bg.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_EC">
+    <meta property="og:site_name" content="Hotel Marinero Inn">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hotelmarineroinn.com/">
+    <meta property="twitter:title" content="Hotel Marinero Inn - Hotel Frente al Mar en Ecuador">
+    <meta property="twitter:description" content="Hotel de playa en Ecuador con habitaciones de lujo, restaurante, discoteca y piscina infinity. Reserva tu estadía ahora.">
+    <meta property="twitter:image" content="https://hotelmarineroinn.com/img/hero-bg.webp">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="EC-M">
+    <meta name="geo.placename" content="San Vicente, Manabí, Ecuador">
+    <meta name="geo.position" content="-0.631389;-80.394722">
+    <meta name="ICBM" content="-0.631389, -80.394722">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="/img/logo.webp">
+    <link rel="apple-touch-icon" href="/img/logo.webp">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0d6efd">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="preload" href="/img/hero-bg.webp" as="image">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Marinero Inn",
+      "image": "https://hotelmarineroinn.com/img/hero-bg.webp",
+      "description": "Hotel frente al mar en la costa ecuatoriana con habitaciones de lujo, restaurante gourmet, discoteca y piscina infinity.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "EC",
+        "addressRegion": "Costa Ecuatoriana"
+      },
+      "telephone": "+593-99-316-1517",
+      "email": "info@hotelmarineroinn.com",
+      "priceRange": "$$",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      },
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Piscina Infinity"},
+        {"@type": "LocationFeatureSpecification", "name": "Restaurante"},
+        {"@type": "LocationFeatureSpecification", "name": "Bar"},
+        {"@type": "LocationFeatureSpecification", "name": "Discoteca"},
+        {"@type": "LocationFeatureSpecification", "name": "Vista al Mar"},
+        {"@type": "LocationFeatureSpecification", "name": "WiFi Gratis"}
+      ],
+      "checkinTime": "15:00",
+      "checkoutTime": "12:00",
+      "petsAllowed": "False",
+      "url": "https://hotelmarineroinn.com"
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+    
+    <header>
+        <%- include('./partials/navbar') %>
+    </header>
+    
+    <main id="main-content">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section" aria-label="Sección principal">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <div class="hero-content">
+                    <h1 class="display-2 fw-bold mb-3 hero-title">Hotel Marinero Inn</h1>
+                    <p class="lead mb-4 fs-3 hero-subtitle">Tu paraíso frente al mar en la costa ecuatoriana</p>
+                    <p class="mb-5 fs-5 text-white-75">Disfruta de habitaciones de lujo, gastronomía excepcional y vida nocturna inolvidable</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="https://wa.me/593993161517?text=Hola,%20me%20gustaría%20reservar%20una%20habitación" target="_blank" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold">
+                            <i class="bi bi-whatsapp me-2"></i>Reservar por WhatsApp
+                        </a>
+                        <a href="#servicios" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold">
+                            <i class="bi bi-info-circle me-2"></i>Descubre Más
+                        </a>
+                    </div>
+                    <div class="hero-features mt-5 pt-4">
+                        <div class="row g-4 text-center">
+                            <div class="col-6 col-md-3">
+                                <div class="feature-item">
+                                    <i class="bi bi-door-open display-5 mb-2"></i>
+                                    <h5 class="mb-0">Habitaciones</h5>
+                                    <small class="text-white-50">Vista al mar</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="feature-item">
+                                    <i class="bi bi-cup-hot display-5 mb-2"></i>
+                                    <h5 class="mb-0">Restaurante</h5>
+                                    <small class="text-white-50">Gourmet</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="feature-item">
+                                    <i class="bi bi-music-note-beamed display-5 mb-2"></i>
+                                    <h5 class="mb-0">Discoteca</h5>
+                                    <small class="text-white-50">Vie & Sáb</small>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="feature-item">
+                                    <i class="bi bi-water display-5 mb-2"></i>
+                                    <h5 class="mb-0">Piscina Infinity</h5>
+                                    <small class="text-white-50">& Bar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#servicios" class="text-white text-decoration-none">
+                        <i class="bi bi-chevron-down fs-1 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section id="servicios" class="py-5" aria-labelledby="servicios-title">
+        <div class="container">
+            <h2 id="servicios-title" class="text-center mb-5">Nuestros Servicios</h2>
+            <div class="row g-4" role="list">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-door-open display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Habitaciones de Lujo</h5>
+                            <p class="card-text">Confortables habitaciones con vista al mar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-cup-hot display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Restaurante</h5>
+                            <p class="card-text">Gastronomía local e internacional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-music-note-beamed display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Discoteca</h5>
+                            <p class="card-text">Diversión nocturna junto al mar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-water display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Piscina & Bar</h5>
+                            <p class="card-text">Relájate en nuestra piscina infinity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería del Hotel -->
+    <section class="py-5 bg-white" aria-labelledby="galeria-title">
+        <div class="container">
+            <h2 id="galeria-title" class="text-center mb-5">Descubre Nuestras Instalaciones</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <figure class="gallery-item">
+                        <img src="/img/front-marinero_converted.webp" class="img-fluid rounded shadow" alt="Entrada principal del Hotel Marinero Inn" loading="lazy" width="400" height="280">
+                        <figcaption class="gallery-overlay">
+                            <h5>Entrada Principal</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="gallery-item">
+                        <img src="/img/poolbar_converted.webp" class="img-fluid rounded shadow" alt="Piscina infinity y bar del hotel" loading="lazy" width="400" height="280">
+                        <figcaption class="gallery-overlay">
+                            <h5>Piscina & Bar</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="gallery-item">
+                        <img src="/img/marinero-beach_converted.webp" class="img-fluid rounded shadow" alt="Playa y acceso al mar desde el hotel" loading="lazy" width="400" height="280">
+                        <figcaption class="gallery-overlay">
+                            <h5>Acceso a la Playa</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="/img/relax-areas_converted.webp" class="img-fluid rounded shadow" alt="Áreas de Relax">
+                        <div class="gallery-overlay">
+                            <h5>Zonas de Descanso</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="/img/bar-zone_converted.webp" class="img-fluid rounded shadow" alt="Zona de Bar">
+                        <div class="gallery-overlay">
+                            <h5>Bar Lounge</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habitaciones -->
+    <section id="habitaciones" class="py-5 bg-light" aria-labelledby="habitaciones-title">
+        <div class="container">
+            <h2 id="habitaciones-title" class="text-center mb-5">Nuestras Habitaciones</h2>
+            <div class="row g-4">
+                <article class="col-md-6 col-lg-4">
+                    <div class="card room-card">
+                        <img src="/img/individual_converted.webp" class="card-img-top" alt="Habitación Individual cómoda en Hotel Marinero Inn" loading="lazy" width="400" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Habitación Individual</h5>
+                            <p class="card-text">Cómoda habitación con todas las comodidades</p>
+                            <p class="text-primary fw-bold">Desde $80/noche</p>
+                            <a href="https://wa.me/593993161517?text=Hola,%20me%20interesa%20la%20Habitaci%C3%B3n%20Individual" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-whatsapp me-1"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4">
+                    <div class="card room-card">
+                        <img src="/img/sea-view-rooms_converted.webp" class="card-img-top" alt="Habitación con vista al mar en Hotel Marinero Inn Ecuador" loading="lazy" width="400" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Habitación Vista al Mar</h5>
+                            <p class="card-text">Despierta con las mejores vistas del océano</p>
+                            <p class="text-primary fw-bold">Desde $120/noche</p>
+                            <a href="https://wa.me/593993161517?text=Hola,%20me%20interesa%20la%20Habitaci%C3%B3n%20Vista%20al%20Mar" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-whatsapp me-1"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 col-lg-4">
+                    <div class="card room-card">
+                        <img src="/img/cuadruple_converted.webp" class="card-img-top" alt="Habitación cuádruple para familias en Hotel Marinero Inn" loading="lazy" width="400" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Habitación Cuádruple</h5>
+                            <p class="card-text">Perfecta para familias, espaciosa y cómoda</p>
+                            <p class="text-primary fw-bold">Desde $180/noche</p>
+                            <a href="https://wa.me/593993161517?text=Hola,%20me%20interesa%20la%20Habitaci%C3%B3n%20Cu%C3%A1druple" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-whatsapp me-1"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurante -->
+    <section id="restaurante" class="py-5" aria-labelledby="restaurante-title">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 id="restaurante-title" class="mb-4">Nuestro Restaurante</h2>
+                    <p class="lead">Disfruta de una experiencia gastronómica única con lo mejor de la cocina ecuatoriana e internacional.</p>
+                    <ul class="list-unstyled" role="list">
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2" aria-hidden="true"></i> Mariscos frescos del día</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2" aria-hidden="true"></i> Platos típicos ecuatorianos</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2" aria-hidden="true"></i> Cocina internacional</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2" aria-hidden="true"></i> Opciones vegetarianas y veganas</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Ver Menú</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/img/restaurant_converted.webp" class="img-fluid rounded shadow-lg" alt="Restaurante gourmet del Hotel Marinero Inn con comida ecuatoriana e internacional" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discoteca -->
+    <section id="discoteca" class="py-5 bg-dark text-light" aria-labelledby="discoteca-title">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <h2 id="discoteca-title" class="mb-4">Discoteca Algarete</h2>
+                    <p class="lead">La mejor vida nocturna frente al mar. DJ's internacionales, música en vivo y las mejores fiestas de la costa.</p>
+                    <ul class="list-unstyled" role="list">
+                        <li class="mb-2"><i class="bi bi-star text-warning me-2" aria-hidden="true"></i> DJ's en vivo</li>
+                        <li class="mb-2"><i class="bi bi-star text-warning me-2" aria-hidden="true"></i> Eventos temáticos</li>
+                        <li class="mb-2"><i class="bi bi-star text-warning me-2" aria-hidden="true"></i> Terraza frente al mar</li>
+                        <li class="mb-2"><i class="bi bi-star text-warning me-2" aria-hidden="true"></i> VIP lounge</li>
+                    </ul>
+                    <p class="text-warning fw-bold">Viernes y Sábados: 9:00 PM - 4:00 AM</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="/img/algarete1_converted.webp" class="img-fluid rounded shadow-lg" alt="Discoteca Algarete en Hotel Marinero Inn con música y eventos" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5" aria-labelledby="contacto-title">
+        <div class="container">
+            <h2 id="contacto-title" class="text-center mb-5">Contáctanos</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <form id="contactForm" method="post" action="/contacto" aria-label="Formulario de contacto">
+                        <!-- Campo honeypot oculto (anti-bot) -->
+                        <input type="text" name="honeypot" style="position:absolute;left:-9999px;width:1px;height:1px;" tabindex="-1" autocomplete="off">
+                        
+                        <div id="formMessages" class="alert" style="display:none;" role="alert"></div>
+                        
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo *</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required aria-required="true" placeholder="Ingresa tu nombre" minlength="2" maxlength="100">
+                            <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico *</label>
+                            <input type="email" class="form-control" id="email" name="email" required aria-required="true" placeholder="tu@email.com">
+                            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+593 XXX XXX XXX">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje *</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required aria-required="true" placeholder="¿En qué podemos ayudarte?" minlength="10" maxlength="1000"></textarea>
+                            <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+                            <small class="text-muted"><span id="charCount">0</span>/1000 caracteres</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                            <i class="bi bi-send me-2"></i><span id="btnText">Enviar Mensaje</span>
+                            <span id="btnLoader" class="spinner-border spinner-border-sm ms-2" style="display:none;" role="status" aria-hidden="true"></span>
+                        </button>
+                        <p class="text-muted mt-3 small">* Campos obligatorios</p>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Información de Contacto</h3>
+                        <address>
+                            <p><i class="bi bi-geo-alt-fill text-primary me-2" aria-hidden="true"></i> <strong>Dirección:</strong><br>San Vicente, Manabí, Ecuador</p>
+                            <p><i class="bi bi-telephone-fill text-primary me-2" aria-hidden="true"></i> <strong>Teléfono:</strong><br><a href="tel:+593993161517" class="text-decoration-none">+593 99 316 15 17</a></p>
+                            <p><i class="bi bi-envelope-fill text-primary me-2" aria-hidden="true"></i> <strong>Email:</strong><br><a href="mailto:info@hotelmarineroinn.com" class="text-decoration-none">info@hotelmarineroinn.com</a></p>
+                            <p><i class="bi bi-whatsapp text-success me-2 fs-5" aria-hidden="true"></i> <strong>WhatsApp:</strong><br><a href="https://wa.me/593993161517" target="_blank" class="text-decoration-none text-success">Contáctanos ahora</a></p>
+                        </address>
+                        <div class="map-container mt-4">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.612845416075!2d-80.41663508934327!3d-0.5814901352597295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902a4ad909d015e3%3A0xd6ee97e0d3e2d2f6!2sHotel%20Marinero%20Inn!5e0!3m2!1ses-419!2ses!4v1764839651791!5m2!1ses-419!2ses"
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Ubicación de Hotel Marinero Inn en San Vicente, Manabí, Ecuador"
+                                    aria-label="Mapa de Google mostrando la ubicación del Hotel Marinero Inn">
+                                </iframe>
+                            </div>
+                            <p class="text-muted small mt-2 text-center">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Frente al malecón de San Vicente, Manabí, Ecuador
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    </main>
+
+    <%- include('./partials/footer') %>
+
+    <!-- Scripts optimizados con defer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

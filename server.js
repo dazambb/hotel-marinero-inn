@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -11,19 +12,21 @@ var MySQLStore = require('connect-mysql')(session)
 
 var options = {
     config: {
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'marinero',
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || '',
+        database: process.env.DB_NAME || 'hotel_marinero',
     },
 }
 app.use(
     session({
-        secret: 'secret',
-        resave: true,
+        secret: process.env.SESSION_SECRET || 'cambia-este-secreto-por-uno-seguro',
+        resave: false,
         saveUninitialized: false,
         cookie: {
             maxAge: 1000 * 60 * 60 * 24, // 1 día
+            secure: process.env.NODE_ENV === 'production', // Solo HTTPS en producción
+            httpOnly: true,
         },
         store: new MySQLStore(options),
     })
@@ -36,10 +39,16 @@ app.use(express.json())
 app.use(router.router)
 app.set('port', config.port)
 
+// Servir archivos estáticos
+app.use(express.static(path.join(__dirname, 'src/public')))
 app.use('/public', express.static(path.join(__dirname, 'src/public')))
 
 app.listen(config.port, () => {
-    console.log(`app listening on port ${config.port}`)
+    console.log('\n✅ Hotel Marinero Inn - Servidor iniciado')
+    console.log(`🌎 Entorno: ${process.env.NODE_ENV || 'development'}`)
+    console.log(`🚀 Puerto: ${config.port}`)
+    console.log(`🔗 URL: http://localhost:${config.port}`)
+    console.log('\nPresiona Ctrl+C para detener el servidor\n')
 })
 
 module.exports = app

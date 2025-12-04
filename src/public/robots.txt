@@ -1,0 +1,14 @@
+# robots.txt para Hotel Marinero Inn
+User-agent: *
+Allow: /
+
+# Bloquear archivos innecesarios
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://hotelmarineroinn.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
